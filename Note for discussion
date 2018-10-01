@@ -1,0 +1,18 @@
+Feature scaling and normalization:
+to calculate the speradence of the data, we could use variable and stand deviation formula
+Example of capital distribution
+
+Unsupervised learning algorithm:
+visualization is easy for data with only two dimension, but not for data with more than two dimensions
+So we use two technique for clustering:
+    k-means
+    centroid:
+        given center points and use data points:
+                1: which points belong to it (c2)
+                2: then belongs to cluseter of c2
+                3: get the average of the points it (c2) contains. 
+                    (x1+x2+...+xn)/n
+                4: get the new center from the data clusters of c2
+        to recalculate the a new center points from it by steps above.
+        
+Psuedocode for centroid:
