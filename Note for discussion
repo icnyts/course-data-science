@@ -16,3 +16,12 @@ So we use two technique for clustering:
         to recalculate the a new center points from it by steps above.
         
 Psuedocode for centroid:
+given data points and centroid:
+data points: pd.DataFrame, data
+centroid: given in random, assume in the form of dataframe too, centroid.
+
+/* for each row in the dataframe, create a new column calls nearest, formula calculate by the maximum distance with random centroid.
+ * Assume we have n centroid, and check k_1 row by now, so distance should be max((sum(difference between col of k_1 and n_1))**2, ... between k_1 and n_2, ... between k_1 and n_n) 
+ * use value above to create group for each centroid
+ * alculate avergae for each centroid and create new average.
+
